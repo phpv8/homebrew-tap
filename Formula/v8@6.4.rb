@@ -6,12 +6,6 @@ class V8AT64 < Formula
   url "https://github.com/v8/v8/archive/6.4.388.18.tar.gz"
   sha256 "a1c558865d40ffaf5128919bdfb06842b05cde9a2430f4869494ac115137861b"
 
-  bottle do
-    root_url "https://dl.bintray.com/pinepain/bottles-devtools"
-    cellar :any
-    sha256 "3f3d415c3669dbcad6b820188138074d1d0b29d28fcf15dabc359495dcb60855" => :high_sierra
-  end
-
   keg_only "Provided V8 formula is co-installable and it is not installed in the library path."
 
   # not building on Yosemite

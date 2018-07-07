@@ -1,10 +1,10 @@
 # Track Chrome stable.
 # https://omahaproxy.appspot.com/
-class V8AT66 < Formula
+class V8AT67 < Formula
   desc "Google's JavaScript engine"
   homepage "https://github.com/v8/v8/wiki"
-  url "https://github.com/v8/v8/archive/6.6.313.tar.gz"
-  sha256 "f72c4841deb09e007c825473529ee5513efc057e7dc846984397332c9daf6ecd"
+  url "https://github.com/v8/v8/archive/6.7.288.46.tar.gz"
+  sha256 "1561a26eed8fa601633a37ed0d4bb5415279c5f430a6a511df31b030daff7906"
 
   keg_only "Provided V8 formula is co-installable and it is not installed in the library path."
 
@@ -54,7 +54,7 @@ class V8AT66 < Formula
 
     cd repo_cache do
       system "gclient", "root"
-      system "gclient", "config", "--spec", <<-EOS.undent
+      system "gclient", "config", "--spec", <<~EOS
         solutions = [
           {
             "url": "https://chromium.googlesource.com/v8/v8.git",
