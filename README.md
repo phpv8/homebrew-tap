@@ -7,7 +7,7 @@ See [phpv8/ppa-packaging](https://github.com/phpv8/ppa-packaging) repository for
 
 Just `brew tap phpv8/tap` and then `brew install <formula>`.
 
-If the formula conflicts with one from another tap, you can `brew install `phpv8/tap/<formula>`.
+If the formula conflicts with one from another tap, you can `brew install phpv8/tap/<formula>`.
 
 You can also install via URL: `brew install https://raw.github.com/php/homebrew-tap/master/Formula/<formula>.rb`
 
