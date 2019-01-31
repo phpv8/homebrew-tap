@@ -48,9 +48,7 @@ class V8AT65 < Formula
     }
 
     v8_version = version
-    arch = MacOS.prefer_64_bit? ? "x64" : "x86"
-    output_name = "#{arch}.release"
-    output_path = "out.gn/#{output_name}"
+    output_path = "out.gn/x64.release"
 
     gn_command = "gn gen #{output_path} --args=\"#{gn_args.map { |k, v| "#{k}=#{v}" }.join(' ')}\""
     gn_command_show_args = "gn args #{output_path} --list"
