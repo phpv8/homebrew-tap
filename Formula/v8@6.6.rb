@@ -15,8 +15,6 @@ class V8AT66 < Formula
   # depot_tools/GN require Python 2.7+
   depends_on "python" => :build
 
-  needs :cxx14
-
   resource "depot_tools" do
     url "https://chromium.googlesource.com/chromium/tools/depot_tools.git",
         :revision => "92745a5b0e2e7593fabe8b831cb913cd548b257b"
